@@ -159,7 +159,7 @@
 
 .titulo_inferior {
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .cabeca h1 {
@@ -189,18 +189,26 @@
 /*FOOTER*/
 
 .site-footer {
-    background-color: #36303B;
+    background-color: #68293C;
     color: white;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .site-footer a {
     color: white;
     text-decoration: none;
 }
+
+.col1{
+    margin-left: 5%;
+}
+
+.col2{
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
 
 /*DICAS E MÉTODOS*/
 .area_metodo{
@@ -520,7 +528,7 @@
 
 
 .dias-semana {  
-    background-color: #b4b1ac;
+    background-color: #f7f1ea;
     width: 25%;
     height: 100%;
     
@@ -528,7 +536,7 @@
 }
 
 .calendario {
-    background-color: #8B8782;
+    background-color: #f7f1ea;
     width: 75%;
     height: 100%;
     
@@ -601,23 +609,23 @@
     border: 2px solid black;
     width: 79%;
     height: 80px;
-    background-color: #8B8782;
+    background-color: #68293C;
 }
 
 .dia:nth-child(odd) table{
-     background-color: #4C091D;
+     background-color: #68293C;
 }
 
 .dia:nth-child(even) table{
-    background-color: #8B8782;
+    background-color: #FFF6F6;
 }
 
 .dia:nth-child(odd) h4{
-    background-color: #8B8782;
-    color: black;
+    background-color: #68293C;
+    color: white;
 }
 
 .dia:nth-child(even) h4{
-    background-color: #4C091D;
+    background-color: #68293C;
     color: white;
 }

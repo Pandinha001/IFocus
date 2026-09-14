@@ -14,7 +14,6 @@ function adicionarComentario() {
         return;
     }
 
-
     const comentario = document.createElement("div");
 
     comentario.className = "comment";
