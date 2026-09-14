@@ -15,6 +15,7 @@
     background-color: #FFF6F6;
 }
 
+
 /*BARRA SUPERIOR*/
 .navegador {
     background-color: #36303B;
@@ -55,7 +56,7 @@
 /*LADO DOS TEXTOS*/
 .textos {
     width: 50%;
-    background-color: #36303B;
+    background-color: #68293C;
     color: white;
     display: flex;
     align-items: center;
@@ -70,7 +71,6 @@
 /* LOGO */
 .logo {
     font-size: 18px;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -111,7 +111,6 @@
     display: block;
     margin-bottom: 5px;
     color: #4C091D;
-    font-weight: bold;
 }
 
 .campo input {
@@ -146,7 +145,6 @@
 }
 .trocar_conta a {
     color: #580A25;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -156,6 +154,14 @@
     color: white;
     padding: 50px;
 }
+.cabeca a{
+    margin-top: 5%;
+    margin-left: 90%;
+    color: white;
+    text-decoration: none;
+}
+
+
 
 .titulo_inferior {
     font-size: 13px;
@@ -328,7 +334,6 @@
 }
 
 .nome {
-    font-weight: bold;
     color: #4C091D;
 }
 
