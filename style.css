@@ -4,14 +4,12 @@
   }
 
   body {
-    margin: 0;
-    background-color: #36303B;
+    margin:0%;
+    background-color: #68293C;
 }
 
 /*PÁGINA PRINCIPAL*/
 .pag_principal {
-    max-width: 1180px;
-    margin: 30px auto;
     background-color: #FFF6F6;
 }
 
@@ -224,7 +222,7 @@
 }
 
 .area_conteudo {
-    background-color: white;
+    background-color: #e2e2e2;
     padding: 20px;
     border-left: 4px solid #580A25;
     border-radius: 5px;
@@ -330,7 +328,6 @@
 
 .item {
     padding: 15px 0;
-    border-bottom: 1px solid #ddd;
 }
 
 .nome {
@@ -372,7 +369,7 @@
 /*MAPA DE MÉTODOS*/
 
 .area_mapa {
-    background-color: white;
+    background-color: #e2e2e2;
     padding: 30px;
     border-radius: 10px;
 }
