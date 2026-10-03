@@ -565,7 +565,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 15px;
+    padding: 5px;
 }
 
 .titulo-dia-semana  {
@@ -615,4 +616,24 @@
 .dia:nth-child(even) h4{
     background-color: #68293C;
     color: white;
+}
+
+#anterior {
+    color: #68293C;
+    background-color: #FFF6F6;
+    width: auto;
+    height: 20%;
+    position: relative;
+    top: 25px;
+    left: -10px;
+}
+
+#proximo {
+    color: #68293C;
+    background-color: #FFF6F6;
+    width: auto;
+    height: 20%;
+    position: relative;
+    top: 25px;
+    left: 10px;
 }
