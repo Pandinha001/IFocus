@@ -318,20 +318,26 @@
     background-color: #4C091D;
     color: white;
     padding: 10px;
+    
+}
+
+.icon{
+    width: 10%;
 }
 
 .item {
     padding: 15px 0;
+    
 }
 
 .nome {
-    color: #4C091D;
+    display: flex;
+    align-items: center;
 }
 
 .descricao {
     color: #555;
 }
-
 /*MONITORIAS*/
 
 .schedule-grid {
