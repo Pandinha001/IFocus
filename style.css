@@ -587,17 +587,7 @@
     
 }
 
-.tabela-dias-semana {
-    width: 80%;
-    border-collapse: collapse;
-    border: 2px solid black;
-   
-}
 
-.tabela-dias-semana td {
-    height: 38px;
-    border: 1px solid black;
-}
 
 .observacoes {
     border: 2px solid black;
@@ -606,11 +596,12 @@
     background-color: #68293C;
 }
 
-.dia:nth-child(odd) table{
+.dia:nth-child(odd) div{
      background-color: #68293C;
+     color: white;
 }
 
-.dia:nth-child(even) table{
+.dia:nth-child(even) div{
     background-color: #FFF6F6;
 }
 
@@ -642,4 +633,30 @@
     position: relative;
     top: 25px;
     left: 10px;
+}
+
+[contenteditable="true"] {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+}
+
+[contenteditable="true"]:focus {
+    outline: 2px solid #68293C;
+    background-color: #f5f0ff; 
+}
+
+.tabela-calendario td.coluna-calendario {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+}
+
+.tabela-calendario td.coluna-calendario.dia-ativo {
+    background-color: #68293C;
+    color: #ffffff;
+    border-radius: 50%; /* Torna o destaque redondo */
+    font-weight: bold;
 }
