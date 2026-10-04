@@ -441,8 +441,13 @@
 
 .menu {
     display: flex;
-    flex-wrap: wrap;
+
 }
+
+.canto{
+    margin-left: auto;
+}
+
 
 /* MÉTODOS */
 
@@ -451,7 +456,7 @@
     grid-template-columns: 1fr;
 }
 
-/* SITES */
+/* RECOMENDAÇÕES */
 
 .materiais {
     display: grid;
