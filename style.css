@@ -7,7 +7,11 @@
     margin:0%;
     background-color: #68293C;
 }
+.imgInicial{
+    width: 100%;
+    height: 400px;
 
+}
 /*PÁGINA PRINCIPAL*/
 .pag_principal {
     background-color: #FFF6F6;
@@ -189,7 +193,6 @@
 }
 
 /*FOOTER*/
-
 .site-footer {
     background-color: #68293C;
     color: white;
