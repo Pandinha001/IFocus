@@ -40,6 +40,10 @@
     background-color: #580A25;
 }
 
+.menu a[href="entrar.html"]{
+    margin-left: auto;
+}
+
 /* PÁGINA ATUAL */
 .menu .index {
     border-bottom: 2px solid white;
@@ -314,6 +318,12 @@
     gap: 30px;
 }
 
+.materiais a{
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+}
+
 .materia h3 {
     background-color: #4C091D;
     color: white;
@@ -421,6 +431,7 @@
     color: #555;
 }
 
+
 /*RESPONSIVIDADE*/
 
 @media (max-width: 760px) {
@@ -442,10 +453,6 @@
 .menu {
     display: flex;
 
-}
-
-.canto{
-    margin-left: auto;
 }
 
 
@@ -500,22 +507,6 @@
     */
 }
 
-
-.lista-navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 1.5;
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-}
-
-.lista-navbar img {
-    width: 27px;
-    height: 27px;
-    object-fit: cover;
-    display: block;
-}
 
 .main-agenda {
     display: flex;
@@ -664,4 +655,138 @@
     color: #ffffff;
     border-radius: 50%; /* Torna o destaque redondo */
     font-weight: bold;
+}
+
+/*MODO ESCURO*/
+
+body.escuro {
+    background-color: #140a0e;
+}
+
+body.escuro .pag_principal {
+    background-color: #1c1217;
+}
+
+/* Barra e menu */
+body.escuro .navegador {
+    background-color: #0f0b12;
+}
+
+body.escuro .menu {
+    background-color: #2a0610;
+}
+
+body.escuro .menu a:hover {
+    background-color: #430a1d;
+}
+
+/* Login e cadastro */
+body.escuro .textos {
+    background-color: #3a1620;
+}
+
+body.escuro .formulario h2,
+body.escuro .campo label {
+    color: #e8a0b4;
+}
+
+body.escuro .subtitulo,
+body.escuro .trocar_conta {
+    color: #a8a2a5;
+}
+
+body.escuro .trocar_conta a {
+    color: #e8a0b4;
+}
+
+body.escuro .campo input,
+body.escuro .comment-form input {
+    background-color: #2a1f25;
+    color: #eeeeee;
+    border: 1px solid #55444b;
+}
+
+/* Topo e conteúdo */
+body.escuro .cabeca {
+    background-color: #2a0610;
+}
+
+body.escuro .titulo,
+body.escuro .area_conteudo h3,
+body.escuro .area_comentario h4,
+body.escuro .user,
+body.escuro .dia h4,
+body.escuro .monit b,
+body.escuro .metodo_mapa h5 {
+    color: #e8a0b4;
+}
+
+body.escuro .descricao,
+body.escuro .area_conteudo p,
+body.escuro .texto,
+body.escuro .monit,
+body.escuro .metodo_mapa p {
+    color: #cfc8cb;
+}
+
+/* Footer */
+body.escuro .site-footer {
+    background-color: #3a1620;
+}
+
+/* Dicas e métodos */
+body.escuro .area_conteudo,
+body.escuro .area_mapa {
+    background-color: #2a1f25;
+}
+
+/* Comentários */
+body.escuro .area_comentario,
+body.escuro .dia {
+    background-color: #241a1f;
+    border-color: #55444b;
+}
+
+body.escuro .comentario {
+    border-bottom: 1px solid #3d2f36;
+}
+
+/* Mapa de métodos */
+body.escuro .metodo_mapa {
+    background-color: #1c1217;
+    border-color: #55444b;
+}
+
+/* Agenda */
+body.escuro .dias-semana,
+body.escuro .calendario {
+    background-color: #1c1217;
+}
+
+body.escuro .tabela-calendario {
+    color: #eeeeee;
+}
+
+body.escuro .dia:nth-child(even) div {
+    background-color: #2a1f25;
+    color: #eeeeee;
+}
+
+body.escuro #anterior,
+body.escuro #proximo {
+    background-color: #2a1f25;
+    color: #e8a0b4;
+}
+
+body.escuro [contenteditable="true"]:focus {
+    background-color: #2f2229;
+}
+
+/* Botão do modo noturno */
+#botao-tema {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    
 }
