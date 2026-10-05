@@ -185,7 +185,21 @@
 .titulo {
     color: #4C091D;
 }
-
+.textoInicial h1{
+    text-indent: 400px;
+    color: #4C091D;
+    font-size: 50px;
+}
+.textoInicial h2{
+    text-indent: 750px;
+    color: #4C091D;
+    font-size: 30px;
+}
+.textoInicial p{
+    text-indent: 520px;
+    color: #555;
+    font-size: 20px;
+}
 .descricao {
     color: #555;
     line-height: 1.6;
