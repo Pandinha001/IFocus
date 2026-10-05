@@ -7,7 +7,10 @@
     margin:0%;
     background-color: #68293C;
 }
-
+.imgInicial{
+    width: 100%;
+    height: 400px;
+}
 /*PÁGINA PRINCIPAL*/
 .pag_principal {
     background-color: #FFF6F6;
@@ -38,6 +41,10 @@
 
 .menu a:hover {
     background-color: #580A25;
+}
+
+.menu a[href="entrar.html"]{
+    margin-left: auto;
 }
 
 /* PÁGINA ATUAL */
@@ -178,14 +185,29 @@
 .titulo {
     color: #4C091D;
 }
-
+.textoInicial h1{
+    text-indent: 400px;
+    color: #4C091D;
+    font-size: 50px;
+}
+.textoInicial h2{
+    text-indent: 750px;
+    color: #4C091D;
+    font-size: 30px;
+}
+.textoInicial p{
+    text-indent: 520px;
+    color: #555;
+    font-size: 20px;
+}
 .descricao {
     color: #555;
     line-height: 1.6;
 }
+/* CONTAINER CARROSSEL */
+
 
 /*FOOTER*/
-
 .site-footer {
     background-color: #68293C;
     color: white;
@@ -314,6 +336,12 @@
     gap: 30px;
 }
 
+.materiais a{
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+}
+
 .materia h3 {
     background-color: #4C091D;
     color: white;
@@ -346,15 +374,22 @@
     gap: 20px;
 }
 
-.dia {
+.dias {
     background-color: white;
     padding: 20px;
     border-top: 4px solid #580A25;
     border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
 }
 
-.dia h4 {
-    color: #4C091D;
+.dias h2 {
+    background-color:  #4C091D;
+    color: white;
 }
 
 .monit {
@@ -421,6 +456,7 @@
     color: #555;
 }
 
+
 /*RESPONSIVIDADE*/
 
 @media (max-width: 760px) {
@@ -441,8 +477,9 @@
 
 .menu {
     display: flex;
-    flex-wrap: wrap;
+
 }
+
 
 /* MÉTODOS */
 
@@ -451,7 +488,7 @@
     grid-template-columns: 1fr;
 }
 
-/* SITES */
+/* RECOMENDAÇÕES */
 
 .materiais {
     display: grid;
@@ -489,28 +526,12 @@
 .body-agenda {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     /*
     background-color: #9b85bb;
     */
 }
 
-
-.lista-navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 1.5;
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-}
-
-.lista-navbar img {
-    width: 27px;
-    height: 27px;
-    object-fit: cover;
-    display: block;
-}
 
 .main-agenda {
     display: flex;
@@ -587,17 +608,7 @@
     
 }
 
-.tabela-dias-semana {
-    width: 80%;
-    border-collapse: collapse;
-    border: 2px solid black;
-   
-}
 
-.tabela-dias-semana td {
-    height: 38px;
-    border: 1px solid black;
-}
 
 .observacoes {
     border: 2px solid black;
@@ -606,11 +617,12 @@
     background-color: #68293C;
 }
 
-.dia:nth-child(odd) table{
+.dia:nth-child(odd) div{
      background-color: #68293C;
+     color: white;
 }
 
-.dia:nth-child(even) table{
+.dia:nth-child(even) div{
     background-color: #FFF6F6;
 }
 
@@ -643,7 +655,6 @@
     top: 25px;
     left: 10px;
 }
-
 /* QUIZ */
 
 .quiz-container {
@@ -766,4 +777,163 @@
     #pergunta {
         font-size: 20px;
     }
+}
+[contenteditable="true"] {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+}
+
+[contenteditable="true"]:focus {
+    outline: 2px solid #68293C;
+    background-color: #f5f0ff; 
+}
+
+.tabela-calendario td.coluna-calendario {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+}
+
+.tabela-calendario td.coluna-calendario.dia-ativo {
+    background-color: #68293C;
+    color: #ffffff;
+    border-radius: 50%; /* Torna o destaque redondo */
+    font-weight: bold;
+}
+
+/*MODO ESCURO*/
+
+body.escuro {
+    background-color: #140a0e;
+}
+
+body.escuro .pag_principal {
+    background-color: #1c1217;
+}
+
+/* Barra e menu */
+body.escuro .navegador {
+    background-color: #0f0b12;
+}
+
+body.escuro .menu {
+    background-color: #2a0610;
+}
+
+body.escuro .menu a:hover {
+    background-color: #430a1d;
+}
+
+/* Login e cadastro */
+body.escuro .textos {
+    background-color: #3a1620;
+}
+
+body.escuro .formulario h2,
+body.escuro .campo label {
+    color: #e8a0b4;
+}
+
+body.escuro .subtitulo,
+body.escuro .trocar_conta {
+    color: #a8a2a5;
+}
+
+body.escuro .trocar_conta a {
+    color: #e8a0b4;
+}
+
+body.escuro .campo input,
+body.escuro .comment-form input {
+    background-color: #2a1f25;
+    color: #eeeeee;
+    border: 1px solid #55444b;
+}
+
+/* Topo e conteúdo */
+body.escuro .cabeca {
+    background-color: #2a0610;
+}
+
+body.escuro .titulo,
+body.escuro .area_conteudo h3,
+body.escuro .area_comentario h4,
+body.escuro .user,
+body.escuro .dia h4,
+body.escuro .monit b,
+body.escuro .metodo_mapa h5 {
+    color: #e8a0b4;
+}
+
+body.escuro .descricao,
+body.escuro .area_conteudo p,
+body.escuro .texto,
+body.escuro .monit,
+body.escuro .metodo_mapa p {
+    color: #cfc8cb;
+}
+
+/* Footer */
+body.escuro .site-footer {
+    background-color: #3a1620;
+}
+
+/* Dicas e métodos */
+body.escuro .area_conteudo,
+body.escuro .area_mapa {
+    background-color: #2a1f25;
+}
+
+/* Comentários */
+body.escuro .area_comentario,
+body.escuro .dia {
+    background-color: #241a1f;
+    border-color: #55444b;
+}
+
+body.escuro .comentario {
+    border-bottom: 1px solid #3d2f36;
+}
+
+/* Mapa de métodos */
+body.escuro .metodo_mapa {
+    background-color: #1c1217;
+    border-color: #55444b;
+}
+
+/* Agenda */
+body.escuro .dias-semana,
+body.escuro .calendario {
+    background-color: #1c1217;
+}
+
+body.escuro .tabela-calendario {
+    color: #eeeeee;
+}
+
+body.escuro .dia:nth-child(even) div {
+    background-color: #2a1f25;
+    color: #eeeeee;
+}
+
+body.escuro #anterior,
+body.escuro #proximo {
+    background-color: #2a1f25;
+    color: #e8a0b4;
+}
+
+body.escuro [contenteditable="true"]:focus {
+    background-color: #2f2229;
+}
+
+/* Botão do modo noturno */
+#botao-tema {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    
 }
