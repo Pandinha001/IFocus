@@ -1,190 +1,249 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
-    <head>
+```
+<head>
 
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-        <title>IFocus | Mapa de Métodos</title>
-        <link rel="stylesheet" href="style.css">
+    <title>IFocus | Quiz</title>
 
-    </head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
 
 
-    <body>
+<body>
 
-        <div class="pag_principal">
-            <nav class="menu">
+    <div class="pag_principal">
 
-                <a href="inicio.html">Início</a>
-                <a href="dicas.html">Dicas e Métodos</a>
+        <!-- MENU -->
 
-                <a
-                    href="metodos.html"
-                    class="index"
+        <nav class="menu">
+
+            <a href="inicio.html">
+                Início
+            </a>
+
+            <a href="dicas.html">
+                Dicas e Métodos
+            </a>
+
+            <a href="metodos.html">
+                Quiz de Métodos
+            </a>
+
+            <a href="recomenda.html">
+                Recomendações
+            </a>
+
+            <a href="monitorias.html">
+                Monitorias
+            </a>
+
+            <a href="agenda.html">
+                Agenda
+            </a>
+
+            <a href="entrar.html">
+                Entrar
+            </a>
+
+            <a href="cadastro.html">
+                Criar conta
+            </a>
+
+        </nav>
+
+
+        <!-- CONTEÚDO -->
+
+        <main class="conteudo">
+
+            <h1 class="titulo">
+                Quiz
+            </h1>
+
+            <h3>
+                Descubra seu método de estudo
+            </h3>
+
+            <p class="descricao">
+
+                Responda às perguntas de acordo com a forma
+                como você prefere estudar. No final, descubra
+                qual método combina mais com você.
+
+            </p>
+
+
+            <!-- QUIZ -->
+
+            <section class="quiz-container">
+
+                <!-- PROGRESSO -->
+
+                <div class="progresso">
+
+                    <span id="numero-pergunta">
+                        Pergunta 1 de 10
+                    </span>
+
+                    <div class="barra">
+
+                        <div
+                            id="barra-progresso"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PERGUNTA -->
+
+                <div id="quiz">
+
+                    <h2 id="pergunta">
+                        Pergunta
+                    </h2>
+
+
+                    <!-- ALTERNATIVAS -->
+
+                    <div id="alternativas">
+
+                    </div>
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        id="botao-proximo"
+                        class="botao_quiz"
+
+                        disabled
+                    >
+                        Próxima
+                    </button>
+
+                </div>
+
+
+                <!-- RESULTADO -->
+
+                <div
+                    id="resultado"
+                    class="resultado"
                 >
-                    Mapa de Métodos
-                </a>
 
-                <a href="recomenda.html">
-                    Recomendações
-                </a>
+                    <h2>
+                        Seu método de estudo combina mais com:
+                    </h2>
 
-                <a href="monitorias.html">
-                    Monitorias
-                </a>
+                    <h1 id="metodo-resultado">
+                        Método
+                    </h1>
 
-                <a href="agenda.html">
-                    Agenda
-                </a>
+                    <p id="descricao-resultado">
+                        Descrição
+                    </p>
 
-                <a href="entrar.html">
-                    Entrar
-                </a>
-                <a href="cadastro.html">
-                    Criar conta
-                </a>
-            </nav>
 
-            <main class="conteudo">
+                    <button
+                        class="botao_quiz"
+                        onclick="reiniciarQuiz()"
+                    >
+                        Fazer o quiz novamente
+                    </button>
 
-                <h1 class="titulo">
-                    Mapa de Métodos
-                </h1>
+                </div>
 
-                <p class="descricao">
+            </section>
 
-                    Uma visão geral de como cada técnica
-                    se conecta ao objetivo comum:
-                    estudar com mais eficiência.
+        </main>
 
+
+        <!-- FOOTER -->
+
+        <footer class="site-footer">
+
+            <div class="col1">
+
+                <h4>
+                    Integrantes
+                </h4>
+
+                <p>
+                    Aline Botelho Ribeiro
                 </p>
 
-                <section class="area_mapa">
+                <p>
+                    Bryan Gabriel da Paz de Carvalho
+                </p>
 
-                    <div
-                        class="mapa_mental"
-                        id="mapa_mental"
-                    >
+                <p>
+                    João Victor Miranda Farias
+                </p>
 
-                        <!-- CENTRO -->
+                <p>
+                    Júlia Lara Machado Cirilo
+                </p>
 
-                        <div class="centro">
-                            MÉTODOS
-                        </div>
+                <p>
+                    Otávio Henrique dos Santos de Lima
+                </p>
 
+                <p>
+                    Pedro Henrique Carvalho Veicir
+                </p>
 
-                        <!-- ESQUERDA -->
+                <p>
+                    Samanta Caroline de Carvalho Santos
+                </p>
 
-                        <div
-                            class="metodo_mapa"
-                            style="left:2%; top:8%;"
-                        >
-                            <h5>Pomodoro</h5>
-
-                            <p>
-                                Ciclos de foco de 25 minutos
-                            </p>
-
-                        </div>
+            </div>
 
 
-                        <div
-                            class="metodo_mapa"
-                            style="left:2%; top:42%;"
-                        >
+            <div class="col2">
 
-                            <h5>Método Cornell</h5>
+                <h3>
+                    Contate-nos
+                </h3>
 
-                            <p>
-                                Anotações divididas
-                                em pistas, notas e resumo
-                            </p>
+                <p>
+                    Rua Taiobeiras, 169, Sevilha
+                    Ribeirão das Neves, MG |
+                    CEP: 33858-480
+                </p>
 
-                        </div>
+                <p>
+                    Telefone : (31) 3627-2303
+                    ou 3627-2301
+                </p>
 
+                <p>
+                    E-mail : gabinete.neves@ifmg.edu.br
+                </p>
 
-                        <div
-                            class="metodo_mapa"
-                            style="left:2%; top:76%;"
-                        >
+            </div>
 
-                            <h5>Mapas Mentais</h5>
+        </footer>
 
-                            <p>
-                                Ideias conectadas
-                                a partir de um conceito central
-                            </p>
-
-                        </div>
+    </div>
 
 
-                        <!-- DIREITA -->
+    <!-- JAVASCRIPT -->
 
-                        <div
-                            class="metodo_mapa"
-                            style="right:2%; top:8%;"
-                        >
+    <script src="java/quiz.js"></script>
 
-                            <h5>Flashcards</h5>
+</body>
+```
 
-                            <p>
-                                Repetição espaçada
-                                com perguntas e respostas
-                            </p>
-
-                        </div>
-
-                        <div
-                            class="metodo_mapa"
-                            style="right:2%; top:42%;"
-                        >
-                            <h5>SQ3R</h5>
-
-                            <p>
-                                Leitura ativa em cinco etapas
-                            </p>
-
-                        </div>
-
-                        <div
-                            class="metodo_mapa"
-                            style="right:2%; top:76%;"
-                        >
-                            <h5>Método de Feynman</h5>
-                            <p>
-                                Explicar com palavras simples
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="site-footer">
-
-                <div class="col1">
-                    <h4>Integrantes</h4>
-                    <p>Aline Botelho Ribeiro</p>
-                    <p>Bryan Gabriel da Paz de Carvalho</p>
-                    <p>João Victor Miranda Farias</p>
-                    <p>Júlia Lara Machado Cirilo</p>
-                    <p>Otávio Henrique dos Santos de Lima</p>
-                    <p>Pedro Henrique Carvalho Veicir</p>
-                    <p>Samanta Caroline de Carvalho Santos</p>
-                    
-                </div>
-                <div class="col2">
-                    <h3>Contate-nos</h3>
-                    <p>Rua Taiobeiras, 169, Sevilha Ribeirão das Neves, MG | CEP: 33858-480</p>
-                    <p>Telefone : (31) 3627-2303 ou 3627-2301</p>
-                    <p>E-mail : gabinete.neves@ifmg.edu.br</p>
-                </div>
-            </footer>
-        </div>
-        <script src="mapa.js"></script>
-    </body>
 </html>
