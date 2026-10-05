@@ -171,13 +171,16 @@
 
 
 .cabeca h1 {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .cabeca p {
     line-height: 1.6;
 }
 
+.cabeca h2{
+    font-size: 30px;
+}
 
 /*CONTEÚDO GERAL*/
 
@@ -186,7 +189,7 @@
 }
 
 .titulo {
-    color: #4C091D;
+    color: white;
 }
 .textoInicial h1{
     text-indent: 400px;
@@ -378,7 +381,7 @@
 }
 
 .dias {
-    background-color: white;
+    background-color: #E2E2E2;
     padding: 20px;
     border-top: 4px solid #580A25;
     border-radius: 5px;
@@ -411,59 +414,11 @@
 
 
 
-/*MAPA DE MÉTODOS*/
+/*QUIZ DE METODO*/
 
-.area_mapa {
-    background-color: #e2e2e2;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.mapa_mental {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 440px;
-}
-
-/* CENTRO DO MAPA */
-
-.centro {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
-    background-color: #580A25;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* CAIXAS DO MAPA */
-
-.metodo_mapa {
-    display: flex;
-    position: absolute;
-    width: 190px;
-    background-color: #FFF6F6;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.metodo_mapa h5 {
-    margin: 0 0 5px 0;
-    color: #4C091D;
-}
-
-.metodo_mapa p {
-    margin: 0;
-    color: #555;
+.descri{
+    color: #0f0b12;
+    font-size: 25px;
 }
 
 
