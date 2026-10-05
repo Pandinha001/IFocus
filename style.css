@@ -75,7 +75,7 @@
 
 /* LOGO */
 .logo {
-    width:590px;
+    width:50%;
     margin-inline-start: auto;
 }
 
@@ -100,11 +100,14 @@
 
 .formulario h2 {
     color: #4C091D;
+    font-size: 50px;
+    margin: 0%;
 }
 
 .subtitulo {
     color: #8B8782;
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 /*CAMPOS DO FORMULÁRIO*/
@@ -400,6 +403,12 @@
 .monit b {
     color: #4C091D;
 }
+
+.monit td,
+.monit th{
+    color: #0f0b12;
+}
+
 
 
 /*MAPA DE MÉTODOS*/
